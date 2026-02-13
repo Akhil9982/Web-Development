@@ -1,0 +1,16 @@
+.flex-container {
+    display: flex;
+    gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    height: 150px;
+    align-items: center; /* default alignment */
+}
+
+.flex-container > div {
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid #000;
+    min-width: 60px;
+    text-align: center;
+}

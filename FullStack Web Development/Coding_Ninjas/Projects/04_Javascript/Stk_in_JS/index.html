@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Stock Market Analysis</h1>
+    </header>
+
+    <div class="container">
+        <main class="chart-section">
+            <div class="chart-container">
+                <canvas id="stockChart"></canvas>
+                <div class="time-filters">
+                    <button class="active" data-time="1M">1 Month</button>
+                    <button data-time="3M">3 Month</button>
+                    <button data-time="1Y">1 Year</button>
+                    <button data-time="5Y">5 Years</button>
+                </div>
+            </div>
+
+            <div class="stock-description">
+                <div>
+                    <span id="company-name"></span>&nbsp;&nbsp;
+                    <span id="Profit"></span>&nbsp;&nbsp;
+                    <span id="Value"></span>
+                </div>
+                <p></p>
+            </div>
+        </main>
+
+        <aside class="stock-list">
+            <div class="stock-item">
+                <span class="ticker">AAPL</span>
+                <span class="price">$3.953</span>
+                <span class="change positive">0.24%</span>
+            </div>
+            <div class="stock-item">
+                <span class="ticker">MSFT</span>
+                <span class="price">$26.178</span>
+                <span class="change positive">0.33%</span>
+            </div>
+            <div class="stock-item">
+                <span class="ticker">GOOGL</span>
+                <span class="price">$20.507</span>
+                <span class="change positive">0.21%</span>
+            </div>
+            <div class="stock-item">
+                <span class="ticker">AMZN</span>
+                <span class="price">$15.064</span>
+                <span class="change positive">0.01%</span>
+            </div>
+            <div class="stock-item">
+                <span class="ticker">PYPL</span>
+                <span class="price">$17.699</span>
+                <span class="change positive">0.10%</span>
+            </div>
+            <div class="stock-item">
+                <span class="ticker">TSLA</span>
+                <span class="price">$14.129</span>
+                <span class="change neutral">0.00%</span>
+            </div>
+            <div class="stock-item">
+                <span class="ticker">JPM</span>
+                <span class="price">$98.108</span>
+                <span class="change positive">0.35%</span>
+            </div>
+            <div class="stock-item">
+                <span class="ticker">NVDA</span>
+                <span class="price">$9.915</span>
+                <span class="change positive">0.19%</span>
+            </div>
+            <div class="stock-item">
+                <span class="ticker">NFLX</span>
+                <span class="price">$46.654</span>
+                <span class="change neutral">0.00%</span>
+            </div>
+            <div class="stock-item">
+                <span class="ticker">DIS</span>
+                <span class="price">$53.563</span>
+                <span class="change positive">0.05%</span>
+            </div>
+        </aside>
+    </div>
+
+
+</body>
+
+</html>

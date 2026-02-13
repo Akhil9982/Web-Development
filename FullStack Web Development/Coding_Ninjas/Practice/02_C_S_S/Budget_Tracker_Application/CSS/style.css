@@ -1,0 +1,101 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #fdf1dc;
+}
+  
+/* Header Styling */
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+  
+/* Push content below fixed header */
+main {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+  
+/* Monthly Expenses Section */
+main section:nth-of-type(1) {
+    background-color: #112d4e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+  
+/* Summary Section */
+.summary {
+    background-color: #112d4e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+  
+/* Important Note Button Section */
+.important-note {
+    position: sticky;
+    top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+/* Important Note Button Styling */
+.important-note button {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+    display: block;
+}
+  
+th, td {
+    border: 1px solid #112d4e;
+    padding: 10px;
+    text-align: center;
+}
+  
+th {
+    background-color: #1e3a5f;
+    color: white;
+}
+  
+/* Footer Styling */
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}

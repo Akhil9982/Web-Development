@@ -1,0 +1,23 @@
+.bg_black {
+    background-color: black;
+    text-align: center;
+}
+h1 {
+    text-shadow: 1px 3px beige;
+}
+.title_b {
+font-weight: bolder;
+}
+.text_orange {
+    color: bisque;
+}
+.text_white {
+    color: white;
+}
+div.container {
+    text-align: left;
+    display: inline-block;
+}
+.italic {
+    font-style: italic;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+</head>
+<body>
+    <form>
+        <!-- Personal Information -->
+         <fieldset>
+            <legend>Personal Information</legend>
+         <!-- Full Name -->
+        <label type="text">Full Name:</label>
+        <input type="text" id="name" name="full name" required placeholder="John Cena"/>
+        <br /> <br />
+        <!-- Email Information -->
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="email" required placeholder="johnCena@gmail.com"/>
+        <br /><br />
+        <!-- Phone Number Information -->
+        <label for="tel">Phone Number:</label>
+        <input type="tel" id="tel" name="tel" required placeholder="+919004090040"/>
+        <br /><br />
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required 
+        min="2024-01-01"
+        max="2025-12-31"
+        />
+        </fieldset>
+        <br />
+
+        <!-- Trip Details -->
+         <fieldset>
+            <legend>Trip Details</legend>
+         <!-- Arrival Date -->
+         <label for="date">Arival Date:</label>
+         <input type="date" id="date" name="date" required 
+         min="2024-01-01"
+         max="2025-12-31"
+         />
+         <br /><br />
+         <!-- Depature Date -->
+         <label for="depature">Depature Date:</label>
+         <input type="date" id="depature" name="depature" 
+         min="2024-01-01"
+         max="2025-12-31"
+         />
+         <br><br>
+         <!-- Number of Travelers -->
+         <label for="travelers">No. of Travelers:</label>
+         <input type="number" id="travelers" name="travelers" placeholder="1">
+         <br /><br />
+         <!-- Accomodation Preference select-->
+         <label for="Prefered">Accommodation Preference:</label>
+         <select name="Accommodation" id="Prefered">
+            <optgroup label="Hotels">
+               <option value="3_Star">3_Star</option>
+               <option value="4_Star">4_Star</option>
+               <option value="5_Star">5_Star</option>
+            </optgroup>
+            <optgroup label="Resorts:">
+               <option value="Beachside Resorts" selected>Beachside Resorts</option>
+               <option value="Offgrid Resorts">Offgrid Resorts</option>
+            </optgroup>
+            <optgroup label="Lodge Type:">
+               <option value="Beach View">Beach View</option>
+               <option value="Sea View">Sea View</option>
+               <option value="Jungle View">Jungle View</option>
+            </optgroup>
+            <optgroup label="Villa Type:">
+               <option value="Beach side">Beachside</option>
+               <option value="Sea Side">Sea Side</option>
+               <option value="Jungle Side">Jungle Side</option>
+            </optgroup>
+         </select>
+         <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Prefered Activities</legend>
+         <!-- Prefered Activities Checkbox-->
+         <label>Prefered Activities:</label>
+         <br>
+         <input type="checkbox" id="Snorkeling" name="Activity" value="Snorkeling" />
+         <label for="Snorkeling">Snorkeling</label>
+         <br>
+         <input type="checkbox" id="Hiking" name="Activity" value="Hiking" />
+         <label for="Hiking">Hiking</label>
+         <br>
+         <input type="checkbox" id="Spa" name="Activity" value="Spa">
+         <label for="Spa">Spa</label>
+         <br>
+        </fieldset>
+         <!-- Baby on Board -->
+         <b><P>Baby on Board ?</P></b>
+         <input type="radio" name="OnBoard" value="Yes" id="Yes"/>
+         <label for="Yes">Yes</label>
+        <input type="radio" name="OnBoard" value="No" id="No" checked/>
+        <label for="No">No</label>
+        <br><br>
+         <!-- Special Requests -Text Area -->
+        <p><b>Special Request:</b></p>
+        <textarea 
+        name="textarea" 
+        id="text" 
+        cols="40" 
+        rows="10"
+        >
+        </textarea>
+         <br><br>
+         <!-- <input type="submit"/>
+         <input type="reset"/> -->
+
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
+         <button type="button"><img src="../Multimedia/up-arrow.png" height="10" width="10" />up-arrow</button>
+    </form>
+</body>
+</html>

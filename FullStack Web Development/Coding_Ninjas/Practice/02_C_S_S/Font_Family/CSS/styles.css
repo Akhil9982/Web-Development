@@ -1,0 +1,13 @@
+body {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+span {
+    color:blue;
+}
+
+span:hover {
+    color:blueviolet;
+}

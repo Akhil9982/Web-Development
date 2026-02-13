@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url('img_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ball{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* background-color: lightblue; */
+    background: conic-gradient(red, orange, yellow,blue, indigo, violet);
+    /* animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards; */
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate;; */
+
+    animation: slide 2s 2s ease-in-out forwards infinite alternate;
+}
+
+.ball:hover{
+    animation-play-state: paused;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0%) rotate(120deg) scale(1);
+        background-color: lightcoral;
+    }
+    /* to{
+        transform: translateX(350px);
+        background-color: lightgreen;
+    } */
+
+    33%{
+        transform: translateY(350px) rotate(240deg) scale(1.2);
+        background-color: lightgreen;
+    }
+
+    66%{
+        transform: translate(350px,350px) rotate(360deg) scale(1.5);
+        background-color: lightblue;
+    }
+
+    100%{
+        transform: translate(350px, 0%) rotate(480deg) scale(1);
+        background-color: lightcoral;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Mandi - Registration</title>
+</head>
+<body>
+    <img src="../../Code_Mandi_HTML_Project/Multimedia/Code_Mandi.jpg" alt="Code Mandi" height="100" width="350" />
+        
+    <h1>Create an Account</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+        
+                <!-- Full Name Input -->
+                <label type="text">Full Name</label>
+                <input type="text" id="name" name="fullname" required />
+                <br /> <br />
+                <!-- Email Information -->
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="email" required placeholder="johnCena@gmail.com" />
+                <br /><br />
+                <!-- Username Input -->
+                <label type="text">Username</label>
+                <input type="text" id="name" name="username" required />
+                <br /> <br />
+                <!-- Password Input -->
+                <label type="text">Passsword</label>
+                <input type="password" id="password" name="password" required />
+                <br /><br />
+                <!-- User Type select-->
+                <label>User type:</label>
+                <select name="usertype">
+                    <optgroup label="Select user type">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="expert">Expert</option>
+                    </optgroup>
+                </select>
+                <br /><br />
+                <!-- Select the Course -->
+                 <label>Select Course</label>
+                 <select name="course">
+                    <optgroup label="Selct the course">
+                        <option value="Web Development">Course 1 - Web Development</option>
+                        <option value="Data Science">Course 2 - Data Science and Fundamentals</option>
+                        <option value="Digital Marketing">Course 3 - Digital Marketing</option>
+                        <option value="Android Development">Course 4 - Android Development</option>
+                    </optgroup>
+                 </select>
+                <br><br>
+                <button type="submit">Register</button>
+        </fieldset>
+    </form>
+</body>
+</html>

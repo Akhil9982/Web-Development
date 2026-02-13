@@ -1,0 +1,183 @@
+/*General Styling*/
+body{
+    font-family:"Arial", sans-serif;
+    margin: 0px;
+    padding:  0px;
+    color: white;
+    text-align: center;
+}
+
+.header_1 {
+    position: fixed;
+    width:100%;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    z-index: 1;
+    background-color:#1e0a46;
+    text-align: center;
+}
+
+.header_1 h1 {
+    margin: 0;
+}
+
+
+.image_sticky img {
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.desc {
+    text-align:center;
+    color: white;
+    position: absolute;
+    writing-mode:horizontal-tb;
+    font-weight: bold;
+    z-index:2;
+    left: 36%;
+    top: 9%;
+    font-size: 20px;
+}
+
+.image_sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+main {
+    padding: 80px 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -800px;
+}
+
+.coaches {
+    margin-top: 20px;
+    top:0;
+    width:100%;
+    text-align: center;
+    z-index:-1;
+    overflow: hidden;
+}
+
+.coach-card {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+    border-radius: 15px;
+    border: 8px solid white;
+}
+
+.coach-card img {
+    width: 250px;
+    height:200px;
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+}
+
+.coach_name {
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    padding: 2px 0;
+    box-sizing: border-box;
+}
+
+.players_card img {
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.coach_name {
+    margin:0;
+}
+
+.scroll-players {
+    border: 1px solid white;
+    padding: 6px;
+    margin: 50px auto;
+    position: relative;
+    width: 500px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8pxx;
+    overflow:hidden;
+}
+
+.scroll-players h2 {
+    text-align: center;
+    font-weight: bolder;
+    color:black;
+    padding: 2px;
+}
+
+.playercard_list {
+    display: block;
+    padding: 0;
+    margin:0;
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.players_card {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.players_card p {
+    font-weight: bold;
+    color:black;
+}
+
+.rank {
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th{
+    background-color: #1e0a46;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    height: 25px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+td{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid #ddd;
+    height: 25px;
+    text-align: left;
+}
+
+.footer{
+    background-color:#1e0a46;
+    padding: 2px;
+    font-weight: bold;
+}
+
+#indian_Cricket_Team {
+    font-size: 25px;
+}

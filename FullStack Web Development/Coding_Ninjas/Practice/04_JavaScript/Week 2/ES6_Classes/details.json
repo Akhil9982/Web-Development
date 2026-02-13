@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "Brian",
+    "lastName": "Smith",
+    "age": 28,
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "phoneNumbers": [
+      {
+        "type": "home",
+        "number": "212-555-1234"
+      },
+      {
+        "type": "work",
+        "number": "646-555-5678"
+      }
+    ]
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Johnson",
+    "age": 34,
+    "address": {
+      "street": "456 Oak Ave",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001"
+    },
+    "phoneNumbers": [
+      {
+        "type": "home",
+        "number": "310-555-7890"
+      },
+      {
+        "type": "work",
+        "number": "213-555-3456"
+      }
+    ]
+  }
+]

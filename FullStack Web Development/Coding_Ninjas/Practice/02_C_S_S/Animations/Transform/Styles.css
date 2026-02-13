@@ -1,0 +1,21 @@
+.box {
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    font-size: 24px;
+    color: azure;
+    text-align: center;
+    border: solid black;
+    border-width: 10px 5px;
+    transition: background-color 2s 500ms;
+    transition: transform 2s ease-in-out;
+}
+
+body:hover .box {
+    transform: translate(50px);
+    transform: rotate(120deg) translate(100px) scale(0.5);
+    background-color: darkorange;
+}

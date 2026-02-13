@@ -1,0 +1,31 @@
+// Mixin
+@mixin box-style($col: blue) {
+  color: $col;
+  border: $initial-border-thickness solid $col;
+  padding: $initial-padding;
+  border-radius: $initial-border-radius;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+button {
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-weight: bold;
+  font-size: 20px;
+  @include box-style($secondary-color);
+}
+
+a {
+  color: $secondary-color;
+}
+
+.error {
+  @include box-style($danger);
+}
+
+.warning {
+  @include box-style($warning);
+}

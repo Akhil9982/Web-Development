@@ -1,0 +1,45 @@
+@use "sass:math";
+
+// Color
+$primary-color: #f77e7e;
+$secondary-color: #4b57a4;
+$warning: #caca4c;
+$danger: #c92424;
+
+// padding
+$initial-padding: 0.25rem;
+// $pd-sm: $initial-padding * 2;
+@debug math.div(10, 2);
+@debug math.ceil(234.9);
+@debug math.floor(234.9);
+@debug 10 != 10;
+
+// Margin
+$initial-margin:0.25rem;
+
+
+// border
+$initial-border-thickness: 1px;
+$initial-border-radius: 0.25rem;
+
+// img-size
+
+$img-size: 50,80,100,120,150,200;
+
+// Colors
+
+$colors: (
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "error": $danger,
+    "warning": $warning,
+    "light": white,
+    "dark" : black,
+    "blue": #1919e6,
+    "red": #e61619,
+    "yellow": #e6e619,
+    "green" : #19e635,
+    "orange":#ffa600,
+    "purple":#9900ff,
+    "grey": #808080,
+);

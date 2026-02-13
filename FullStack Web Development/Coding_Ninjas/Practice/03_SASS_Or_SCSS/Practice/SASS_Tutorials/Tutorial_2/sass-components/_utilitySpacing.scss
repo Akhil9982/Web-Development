@@ -1,0 +1,43 @@
+@for $i from 1 through 6 {
+  //   @debug $i;
+
+  .m-#{$i} {
+    margin: $initial-margin * $i;
+  }
+
+  .mt-#{$i} {
+    margin-top: $initial-margin * $i;
+  }
+
+  .ml-#{$i} {
+    margin-left: $initial-margin * $i;
+  }
+
+  .mr-#{$i} {
+    margin-top: $initial-margin * $i;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: $initial-margin * $i;
+  }
+
+  .p-#{$i} {
+    padding: $initial-padding * $i;
+  }
+
+  .pt-#{$i} {
+    padding-top: $initial-padding * $i;
+  }
+
+  .pl-#{$i} {
+    padding-left: $initial-padding * $i;
+  }
+
+  .pr-#{$i} {
+    padding-right: $initial-padding * $i;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: $initial-padding * $i;
+  }
+}

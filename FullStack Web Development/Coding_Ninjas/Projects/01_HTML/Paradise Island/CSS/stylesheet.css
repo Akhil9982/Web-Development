@@ -1,0 +1,55 @@
+/* h2 {
+    color: blueviolet;
+}
+
+.descr_rest {
+    color: forestgreen;
+}
+
+#Wel {
+    color: lawngreen;
+    font-size: 50px;
+}
+
+body{
+    font-size: 30px;
+}
+
+div {
+    background-color: hsla(180, 100%, 50%, 0.5);
+    text-shadow: ;
+    background-image: url(../Multimedia/up-arrow.png);
+    background-repeat:no-repeat;
+    background-;
+    width:  50vw;
+    height: 50vh;
+}
+
+table,td,th {
+    border: 2px solid blueviolet;
+    border-collapse: collapse;
+    width: 50%;
+    background-color:blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    height: 70px;
+    vertical-align: middle;
+} */
+
+a {
+    outline: 1px solid burlywood;
+    background-color :white;
+    padding: 1px;
+    text-decoration: dashed;
+    cursor: default;
+    color: #27ae60;
+    block-size:inline-block;
+}
+
+/* a[href$=".com"] {
+    color:brown;
+} */
+
+a[href*="https"][href$=".com"] {
+    margin: ;
+}
