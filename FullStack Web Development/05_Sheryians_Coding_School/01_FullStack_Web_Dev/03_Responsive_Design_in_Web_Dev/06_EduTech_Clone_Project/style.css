@@ -1,0 +1,281 @@
+:root {
+  --gray: #212121;
+  --green: #009660;
+  --white: #e9e9e9;
+  --black: #0c0c0c;
+  --lgray: #929292;
+}
+
+@font-face {
+  font-family: neue;
+  src: url(./fonts/NeueMachina-Regular.woff2);
+}
+
+@font-face {
+  font-family: marc;
+  src: url(./fonts/Manrope-VariableFont_wght.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--black);
+}
+
+.green {
+  color: var(--green);
+}
+.lgray {
+  color: var(--lgray);
+}
+
+/* Nav Bar */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav1 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav1 h4 {
+  font-family: neue;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.nav1 img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav2 {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav2 h4 {
+  font-family: neue;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.nav3 {
+  display: none;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav3 h4 {
+  font-family: neue;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 600px) {
+  nav {
+    padding: 13px 20px;
+    position: fixed;
+    width: 100%;
+  }
+  .nav1 h4 {
+    font-size: 12px;
+  }
+  .nav1 img {
+    height: 40px;
+  }
+
+  .nav2 {
+    display: none;
+  }
+
+  .nav3 {
+    display: flex;
+  }
+}
+
+/* main */
+main {
+  padding-top: 100px;
+}
+
+.section1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px 70px;
+  font-family: neue;
+  font-weight: 100;
+}
+
+.section1 .left {
+  width: 42%;
+}
+
+.section1 .left h1 {
+  font-size: 48px;
+}
+
+.section1 .left .tags {
+  display: flex;
+  align-items: center;
+  gap: 5px 5px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.left .price {
+  font-size: 35px;
+}
+
+.left .price .lgray {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.section1 .left .tags h4 {
+  padding: 10px 20px;
+  border-radius: 4px;
+  white-space: nowrap;
+  background-color: var(--gray);
+}
+
+.section1 .left .cta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.cta button {
+  background-color: var(--green);
+  padding: 20px 60px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.cta button:nth-child(2) {
+  background-color: var(--gray);
+}
+
+.section1 .right .right-in {
+  width: 600px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.section1 .right .right-in .image {
+  width: 100%;
+  height: 350px;
+}
+
+.section1 .right .right-in .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section1 .right .right-in .image-bottom {
+  padding: 20px;
+  padding-top: 40px;
+  background-color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.right-in .image-bottom h4 {
+  background-color: #151515;
+  padding: 10px 5px;
+  width: 45%;
+  border-radius: 5px;
+}
+
+@media (max-width: 1400px) {
+  .section1 .left h1 {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    padding-top: 50px;
+  }
+  .section1 {
+    flex-direction: column-reverse;
+    padding: 15px 5vw;
+  }
+  .section1 .left {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .section1 .left h1 {
+    font-size: 33px;
+  }
+  .section1 .right .right-in {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .section1 .right .right-in .image {
+    width: 100%;
+    height: 45vw;
+  }
+  .section1 .right .right-in .image-bottom {
+    padding: 10px;
+    padding-top: 20px;
+    gap: 8px;
+  }
+  .right-in .image-bottom h4 {
+    padding: 6px 12px;
+    font-size: 2.5vw;
+    border-radius: 5px;
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .section1 .left h1 {
+    font-size: 5vw;
+  }
+}
+
+.section2 .get_placed_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 70px;
+  white-space: nowrap;
+  background-image:url(./multimedia/bg.avif);
+  background-size: contain;
+  background-clip: text;
+  color: transparent;
+  font-family: marc;
+}
