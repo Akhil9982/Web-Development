@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#box{
+    width: 50%;
+    height: 50%;
+    background-color: blueviolet;
+}
+
+#innerbox{
+    width: 10%;
+    height: 10%;
+    background-color: coral;
+}
+
+h1{
+    font-size: 2px
+}

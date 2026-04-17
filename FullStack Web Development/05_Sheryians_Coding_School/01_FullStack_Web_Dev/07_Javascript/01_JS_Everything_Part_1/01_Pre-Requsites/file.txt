@@ -1,0 +1,7 @@
+Keywords VS Words
+
+keywords : Reserved for doing something
+
+const,let,var
+
+Words : These are normal words which are basically we use in our day to day life

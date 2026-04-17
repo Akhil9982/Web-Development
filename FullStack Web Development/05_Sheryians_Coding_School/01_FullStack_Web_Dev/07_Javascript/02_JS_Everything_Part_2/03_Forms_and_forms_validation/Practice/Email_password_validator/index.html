@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Email & Password Validator</h2>
+
+      <form autocomplete="off">
+        <!-- Email -->
+        <div class="field">
+          <label for="email">Email</label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <small class="error" id="emailError">Invalid email</small>
+        </div>
+
+        <!-- Password -->
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+            <span class="toggle-icon" id="togglePassword"
+              ><i class="fa-regular fa-eye"></i
+            ></span>
+          </div>
+          <small class="error" id="passwordError">Invalid password</small>
+        </div>
+
+        <button type="submit">Validate</button>
+      </form>
+      <div id="resultMessage"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
