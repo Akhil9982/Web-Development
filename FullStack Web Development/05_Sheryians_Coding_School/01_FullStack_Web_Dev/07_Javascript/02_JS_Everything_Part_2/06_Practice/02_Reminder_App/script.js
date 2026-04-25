@@ -1,3 +1,13 @@
+// Execution Notes for JS Implementation
+// DOM Manipulation: Query all .card elements into an array.
+
+// Rotation Logic: When Up is clicked, take the .card-pos-1 element, remove that class, give it .card-hidden-up (or instantly move it to the back of the array), and shift the classes of the remaining elements up one level (pos-2 becomes pos-1, pos-3 becomes pos-2, etc.).
+
+// Add Logic: When the form is submitted, generate a new DOM element, prepend it to the stack container, assign it .card-pos-1, and shift all existing classes down. Any card pushed beyond pos-3 should be assigned .card-hidden-down or removed from the DOM if keeping a strict maximum limit.
+
+// Modal: Toggle the .hidden utility class on the #add-modal element when clicking the Add Card and Cancel buttons.
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const stackContainer = document.getElementById('card-stack');
   const btnUp = document.getElementById('btn-up');
