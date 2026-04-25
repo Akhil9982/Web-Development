@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.cards-stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.category p,
+.category label {
+  font-weight: 400;
+}
+.card {
+  border: 1px solid gray;
+  width: 500px;
+  height: 250px;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  position: absolute;
+  gap: 45px;
+  flex-direction: column;
+  display: flex;
+  pointer-events: none;
+}
+
+.card.top {
+  z-index: 3;
+  transform: translate(0%, 100%) scale(1);
+}
+
+.card.middle {
+  z-index: 2;
+  transform: translate(0%, -5%) scale(0.95);
+}
+
+.card.bottom {
+  z-index: 1;
+  transform: translate(0%, -110%) scale(0.9);
+}
+.navbtns {
+  position: absolute;
+  z-index: 10;
+  padding: 20px;
+  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  top: 340px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.form-section {
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid gray;
+  width: 500px;
+  height: 400px;
+  border-radius: 5%;
+  padding: 25px;
+}
+.hidden {
+  display: none;
+}
+form input {
+  margin-bottom: 25px;
+}
